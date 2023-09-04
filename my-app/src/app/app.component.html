@@ -1,8 +1,7 @@
+
 <app-first-component></app-first-component>
 <div>
-    <p *ngFor="let task of tasks">
-        {{task}}
-    </p>
 </div>
-<app-new-task-component></app-new-task-component>
-<app-tasks-list-component></app-tasks-list-component>
+<h1 [innerHTML]="title"></h1>
+<p [innerHTML]="title"></p>
+<input type="text" [(ngModel)]="title">

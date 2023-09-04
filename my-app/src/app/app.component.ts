@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  tasks = [
-    "Visit Relatives", 
-    "call Dad",
-    "go to gym", 
-    "shopping", 
-    "pay bills"
-  ];
+ 
 }
