@@ -8,5 +8,11 @@ import { FormsModule } from '@angular/forms'; // needed for ngModel
 })
 export class AppComponent {
   title = 'my-app';
+
+  //Tempalte Reference Var
+  handleClick(val:any)
+  {
+    console.log(val);
+  }
  
 }

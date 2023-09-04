@@ -8,3 +8,6 @@
 <p [innerHTML]="title"></p>
 <input type="text" [(ngModel)]="title">
 
+<!-- Template Reference variable -->
+<input type="text" #refVar>
+<button (click)="handleClick(refVar)">Click</button>
