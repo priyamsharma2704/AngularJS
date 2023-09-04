@@ -11,3 +11,12 @@
 <!-- Template Reference variable -->
 <input type="text" #refVar>
 <button (click)="handleClick(refVar)">Click</button>
+
+<!-- ngClass -->
+<table>
+    <tr *ngFor="let pokemon of pokemons; let i = index">
+        <td [class.active]="pokemon.isActive">{{pokemon.type}}</td>
+        <td>{{pokemon.name}}</td>
+        <td>{{pokemon.rank}}</td>
+    </tr>
+</table>

@@ -15,4 +15,27 @@ export class AppComponent {
     console.log(val);
   }
  
+  //ngClass
+  pokemons: Pokemon[] = [
+    {
+      name:"pikachu",
+      rank: 1,
+      isActive: false,
+      type: "electric"
+    },
+    {
+      name:"charmander",
+      rank: 2,
+      isActive: true,
+      type: "fire"
+    }
+  ]
+}
+
+//ngClass
+interface Pokemon{
+  name:string,
+  rank: number,
+  isActive: boolean,
+  type: string
 }
