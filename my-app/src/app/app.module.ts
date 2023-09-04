@@ -7,6 +7,7 @@ import { FirstComponentComponent } from './first-component/first-component.compo
 import { NewTaskComponentComponent } from './new-task-component/new-task-component.component';
 import { TasksListComponentComponent } from './tasks-list-component/tasks-list-component.component';
 import { FormsModule } from '@angular/forms';
+import { PokemonBaseModule } from './pokemon-base/pokemon-base.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule // needed for ngModel
+    FormsModule, // needed for ngModel
+    PokemonBaseModule //Modules
   ],
   providers: [],
   bootstrap: [AppComponent]
