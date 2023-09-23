@@ -1,3 +1,25 @@
+
 <app-first-component></app-first-component>
-<app-new-task-component></app-new-task-component>
-<app-tasks-list-component></app-tasks-list-component>
+<div>
+</div>
+<h1 [innerHTML]="title"></h1>
+
+<!-- Two Way binding -->
+<p [innerHTML]="title"></p>
+<input type="text" [(ngModel)]="title">
+
+<!-- Template Reference variable -->
+<input type="text" #refVar>
+<button (click)="handleClick(refVar)">Click</button>
+
+<!-- ngClass -->
+<table>
+    <tr *ngFor="let pokemon of pokemons; let i = index">
+        <td [class.active]="pokemon.isActive">{{pokemon.type}}</td>
+        <td>{{pokemon.name}}</td>
+        <td>{{pokemon.rank}}</td>
+    </tr>
+</table>
+
+<!-- Modules -->
+<app-pokemon-base class="pokemon-list"></app-pokemon-base>
