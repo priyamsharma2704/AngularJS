@@ -1,2 +1,3 @@
 <p>parent works!</p>
-<child [item]="currentItem"></child>
+<child [item]="currentItem" (event)="getMessage($event)"></child>
+{{message}}

@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
     currentItem = "this is current item";
-
+    message = "";
+    getMessage($event:any)
+    {
+      this.message = $event;
+    }
 }
